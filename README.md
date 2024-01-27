@@ -7,7 +7,7 @@
 gcc pacman.cpp -framework GLUT -framework GLUT -o pacman
 ```
 
-### Linux (Raspbian)
+## Linux (Raspbian)
 ```shell
 sudo apt-get install freeglut3-dev g++
 g++ -I /usr/include pacman.cpp -lGL -lglut -lGLU  -o pacman
