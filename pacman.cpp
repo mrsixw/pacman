@@ -19,8 +19,11 @@ demo animation
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#ifdef __linux__
+#include <GL/glut.h>
+#else
 #include <GLUT/glut.h>
-
+#endif 
 GLfloat vertices[][3] = {{1.0,1.0,0.0},{-1.0,1.0,0.0},{-1.0,-1.0,0.0},{1.0,-1.0,0.0},
 						{1.0,1.0,2.0},{-1.0,1.0,2.0},{-1.0,-1.0,2.0},{1.0,-1.0,2.0}};
 GLfloat color[][3]= {{1.0,0.0,0.0},{0.0,1.0,0.0},{0.0,0.0,1.0},{1.0,1.0,0.0},{1.0,0.0,1.0},
